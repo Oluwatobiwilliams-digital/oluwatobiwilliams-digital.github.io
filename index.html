@@ -8,7 +8,7 @@
 <meta property="og:title" content="Oluwatobi Williams | Webflow & WordPress Developer">
 <meta property="og:description" content="Websites, landing pages and digital systems for growing businesses.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="images/oluwatobi.jpg">
+<meta property="og:image" content="oluwatobi.jpg">
 <meta name="theme-color" content="#08090b">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon.ico" sizes="48x48">
@@ -164,12 +164,12 @@ nav .btn{display:none}
 
 <main id="top">
 <section class="hero"><div class="wrap">
-<span class="pill"><img src="images/oluwatobi.jpg" alt="">Oluwatobi Williams, freelance web developer</span>
+<span class="pill"><img src="oluwatobi.jpg" alt="">Oluwatobi Williams, freelance web developer</span>
 <h1>Websites that <span>win customers</span> for your business</h1>
 <p>I design and build websites in Webflow and WordPress, and support them with landing pages, Shopify stores and local search visibility. Around three years of hands-on work with clients worldwide.</p>
 <div class="cta"><a class="btn fill" href="#work">See my work</a><a class="btn" href="https://wa.me/2348115455168" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
 <div class="stage"><div class="bar"><i></i><i></i><i></i><span class="t on">Design</span><span class="t">CMS</span><span class="t">Interactions</span><span class="u">coreform-fitness-blueprint.webflow.io</span></div>
-<div class="canvas"><img src="images/coreform.jpg" alt="CoreForm fitness website built by Oluwatobi Williams in Webflow" width="1285" height="566"><div class="sel"><b>Hero section</b></div></div></div>
+<div class="canvas"><img src="coreform.jpg" alt="CoreForm fitness website built by Oluwatobi Williams in Webflow" width="1285" height="566"><div class="sel"><b>Hero section</b></div></div></div>
 </div></section>
 
 <div class="mq" aria-hidden="true"><div class="track" id="trk"></div></div>
@@ -202,7 +202,7 @@ nav .btn{display:none}
 </div></div></section>
 
 <section id="about" class="about" style="padding-top:0"><div class="wrap">
-<div class="ph rv"><img src="images/oluwatobi.jpg" alt="Oluwatobi Williams" loading="lazy" width="640" height="960"></div>
+<div class="ph rv"><img src="oluwatobi.jpg" alt="Oluwatobi Williams" loading="lazy" width="640" height="960"></div>
 <div class="rv">
 <h2>About me</h2>
 <p>I'm Oluwatobi Williams, a digital specialist based in Nigeria working with clients internationally. I've spent about three years in the online space, and websites are where I'm strongest. I build them in Webflow and WordPress, and I choose the platform that fits what the client needs, not the other way round.</p>
@@ -229,7 +229,7 @@ nav .btn{display:none}
 <dialog id="dlg" aria-label="Project details"><button class="mclose" aria-label="Close">×</button><div class="mbody" id="mb"></div></dialog>
 
 <script>
-/* ADD A PROJECT: copy one block below, change the text, upload its image(s) to /images,
+/* ADD A PROJECT: copy one block below, change the text, upload its image(s) to the repository,
    and add live:"https://..." to show a "Visit live site" button. platform: "Webflow" or "WordPress". */
 const P=[
 {t:"CoreForm",type:"Fitness coaching platform",platform:"Webflow",tag:"Built from scratch",img:["coreform"],d:"A fitness coaching website designed and built from scratch in Webflow, with a clear hero, navigation and call to action.",live:"https://coreform-fitness-blueprint.webflow.io/"},
@@ -248,9 +248,9 @@ const cls=p=>p.platform==="WordPress"?"tag wp":"tag";
 const tg=p=>'<div class="tags"><span class="'+cls(p)+'">'+p.platform+'</span><span class="tag cl">'+p.tag+'</span></div>';
 function draw(f){g.innerHTML="";P.forEach((p,i)=>{if(f!=="All"&&p.platform!==f)return;
 const b=document.createElement("button");b.className="proj";b.setAttribute("aria-label","Open "+p.t);
-b.innerHTML='<div class="fr"><img src="images/'+p.img[0]+'.jpg" alt="'+p.t+' website screenshot" loading="lazy"></div><div class="info"><h3>'+p.t+'</h3><p>'+p.type+'</p>'+tg(p)+'</div>';
+b.innerHTML='<div class="fr"><img src="'+p.img[0]+'.jpg" alt="'+p.t+' website screenshot" loading="lazy"></div><div class="info"><h3>'+p.t+'</h3><p>'+p.type+'</p>'+tg(p)+'</div>';
 b.onclick=()=>show(i);g.appendChild(b)})}
-function show(i){const p=P[i];$("#mb").innerHTML='<h3>'+p.t+'</h3><p>'+p.type+'</p>'+tg(p)+'<div class="mimgs">'+p.img.map(x=>'<img src="images/'+x+'.jpg" alt="'+p.t+' screenshot">').join("")+'</div><p>'+p.d+'</p>'+(p.live?'<p style="margin-top:18px"><a class="btn fill" href="'+p.live+'" target="_blank" rel="noopener">Visit live site</a></p>':'<p style="margin-top:14px;font-size:.9rem">Screenshots only. This project has no public live link.</p>');dlg.showModal()}
+function show(i){const p=P[i];$("#mb").innerHTML='<h3>'+p.t+'</h3><p>'+p.type+'</p>'+tg(p)+'<div class="mimgs">'+p.img.map(x=>'<img src="'+x+'.jpg" alt="'+p.t+' screenshot">').join("")+'</div><p>'+p.d+'</p>'+(p.live?'<p style="margin-top:18px"><a class="btn fill" href="'+p.live+'" target="_blank" rel="noopener">Visit live site</a></p>':'<p style="margin-top:14px;font-size:.9rem">Screenshots only. This project has no public live link.</p>');dlg.showModal()}
 const fb=$(".filters");["All","Webflow","WordPress"].forEach((n,k)=>{const b=document.createElement("button");b.textContent=n;b.setAttribute("aria-pressed",k===0);b.onclick=()=>{fb.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b));draw(n)};fb.appendChild(b)});
 draw("All");
 dlg.querySelector(".mclose").onclick=()=>dlg.close();
