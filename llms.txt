@@ -1,0 +1,24 @@
+# Oluwatobi Williams
+
+> Freelance web developer. I build websites in Webflow and WordPress, plus landing pages, Shopify stores and Google Business Profile setups, for clients worldwide.
+
+## Services
+- Website design and development (Webflow, WordPress)
+- Website redesign
+- Landing pages and conversion
+- Webflow cleanup and CMS setup
+- Shopify store design
+- Google Business Profile setup
+
+## Links
+- [Portfolio](https://oluwatobiwilliams-digital.github.io/)
+- [Fiverr](https://www.fiverr.com/damilolaroland)
+- [Upwork](https://www.upwork.com/freelancers/~013324a79e0c4c1439)
+- [Substack](https://oluwatobiwilliams.substack.com)
+- [Facebook](https://www.facebook.com/people/Oluwatobi-Ifiriyele/100088642874089/)
+- [Instagram](https://www.instagram.com/oluwatobiifiriyele/)
+
+## Live projects
+- [CoreForm](https://coreform-fitness-blueprint.webflow.io/): Fitness coaching platform, built in Webflow
+- [FlowPilot](https://flowpilot-saas-website.webflow.io/): AI operations SaaS, built in Webflow
+- [Savoria](https://savoria-dine-elegance.webflow.io/): Fine dining restaurant, built in Webflow
